@@ -1,0 +1,22 @@
+.section-steps {
+    $first-lg-img: url(#{$path-images}line-top-bottom.svg) no-repeat center 25% / contain;
+    $second-lg-img: url(#{$path-images}line-bottom-top.svg) no-repeat center 95% / contain;
+
+    .line {
+        background: $first-lg-img, $second-lg-img;
+    }
+
+    .item {
+        &:nth-last-child(-n+2) {
+            &.line {
+                background: $first-lg-img, none;
+            }
+        }
+    }
+
+    .mobile-line {
+        &:last-child {
+            display: none;
+        }
+    }
+}

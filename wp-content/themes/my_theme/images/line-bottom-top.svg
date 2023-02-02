@@ -1,0 +1,14 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 569 187" width="569" height="187">
+	<title>Vector 1 (1)-svg</title>
+	<defs>
+		<image  width="40" height="41" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAApCAMAAABwfJv6AAAAAXNSR0IB2cksfwAAAFRQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////MF88lgAAABx0Uk5TAA8wUI8JGGPg/yPDGQQkP1FAqDEBeWSQxKkQ4cXLq4wAAADxSURBVHictdTJFoMgDAVQ6kjqUFGqov//nw1aKSJgNn3rewgECGPnPJI0w6RJziIpSg4mvCwC7FmBk6r2sDxzmU7WuK7lPocbaM/u5Wc6ie26sAMQVt2YAzDV87gDfvT00hY3/e7EnQMYtJOBxpyKS4TDvduX7Cmwvz/yNw2tsu7lmwZHNtHgxGgOOBXCH+BMc4p+6ujj/kWwmgYXJleKW/H1jBQ4IlxolTGEc0+kT4jJCd9fx4wAFXfKTAoZvUclrZkXaeZ8mr0yWN1eb5OBvneO0433bHReLmybfk591XqZTiOOa1oncRnfTuSCue7sA4yYMVduvhwqAAAAAElFTkSuQmCC"/>
+		<image  width="40" height="41" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAApCAMAAABwfJv6AAAAAXNSR0IB2cksfwAAAFRQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////MF88lgAAABx0Uk5TAA8wUI8JGGPg/yPDGQQkP1FAqDEBeWSQxKkQ4cXLq4wAAADxSURBVHictdTJFoMgDAVQ6kjqUFGqov//nw1aKSJgNn3rewgECGPnPJI0w6RJziIpSg4mvCwC7FmBk6r2sDxzmU7WuK7lPocbaM/u5Wc6ie26sAMQVt2YAzDV87gDfvT00hY3/e7EnQMYtJOBxpyKS4TDvduX7Cmwvz/yNw2tsu7lmwZHNtHgxGgOOBXCH+BMc4p+6ujj/kWwmgYXJleKW/H1jBQ4IlxolTGEc0+kT4jJCd9fx4wAFXfKTAoZvUclrZkXaeZ8mr0yWN1eb5OBvneO0433bHReLmybfk591XqZTiOOa1oncRnfTuSCue7sA4yYMVduvhwqAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #00dcdc;stroke-linecap:round;stroke-linejoin:round;stroke-width: 8 } 
+	</style>
+	<path id="Layer" class="shp0" d="M543.98 19.26C543.98 19.26 538.98 19.26 416.98 19.26C294.98 19.26 230.98 169.29 127.98 169.29C24.98 169.29 16.37 169.29 16.37 169.29" />
+	<use id="Layer 1" href="#img1" x="529" y="0" />
+	<use id="Layer 2" href="#img2" x="0" y="146" />
+</svg>

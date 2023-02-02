@@ -1,0 +1,38 @@
+button {
+    background: none;
+    border: none;
+    padding: 0;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn-primary {
+    @include button-variant(
+        $primary,
+        $primary,
+        $color: color-contrast($primary),
+        $hover-background: shade-color($primary, 5%),
+        $hover-border: shade-color($primary, 5%),
+    );
+}
+
+.btn-dark {
+    @include button-variant(
+        $dark,
+        $dark,
+        $color: $primary,
+        $hover-background: tint-color($dark, 15%),
+        $hover-border: tint-color($dark, 15%),
+        $hover-color: $primary,
+    );
+}
+
+.btn-outline-dark {
+
+    @include button-outline-variant(
+        $dark,
+        $color-hover: $primary,
+    )
+}

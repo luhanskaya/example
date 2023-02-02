@@ -1,0 +1,7 @@
+.section-technology {
+    background: url(#{$path-images}technology-bg.png) center right / contain no-repeat;
+
+    @include media-breakpoint-up(lg) {
+        background: none;
+    }
+}

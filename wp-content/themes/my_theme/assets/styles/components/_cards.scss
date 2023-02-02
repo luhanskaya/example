@@ -1,0 +1,67 @@
+a.card,
+a.card-body {
+    color: inherit;
+}
+
+.card-title {
+    font-weight: 500;
+
+    a:not(:hover) {
+        color: inherit;
+    }
+}
+
+.card-img {
+    @include border-top-radius($card-inner-border-radius);
+    @include border-bottom-radius($card-inner-border-radius);
+}
+
+.card-img-top {
+    @include border-top-radius($card-inner-border-radius);
+}
+
+.card-equal {
+    @extend %equal;
+}
+
+.overlay {
+    position: relative;
+    z-index: 1;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: inherit;
+        z-index: -1;
+    }
+}
+
+@for $i from 1 through 100 {
+    .overlay-#{$i} {
+        &:before {
+            opacity: $i / 100;
+        }
+    }
+}
+
+@mixin bg-variant-overlay($parent, $color) {
+    #{$parent} {
+        &:before {
+            background-color: $color !important;
+        }
+    }
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        @each $color, $value in $theme-colors {
+            @include bg-variant-overlay(".overlay#{$infix}-#{$color}", $value);
+        }
+    }
+}

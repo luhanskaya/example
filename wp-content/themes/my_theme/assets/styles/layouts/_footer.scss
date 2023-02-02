@@ -1,0 +1,21 @@
+.footer {
+    .footer-title {
+        color: $primary;
+        margin-bottom: 46px;
+    }
+
+    .menu {
+        @extend .list-unstyled;
+        margin-bottom: 58px;
+
+        a {
+            &:not(:hover) {
+                color: inherit;
+            }
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+    }
+}

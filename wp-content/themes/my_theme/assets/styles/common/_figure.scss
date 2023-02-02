@@ -1,0 +1,56 @@
+.bg-cover {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    backface-visibility: hidden;
+    background-size: cover;
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.shape-top {
+    top: -1px;
+    right: 0;
+    left: 0;
+
+    & > * {
+        transform-origin: bottom center;  
+    }
+}
+
+.shape-bottom {
+    bottom: -1px;
+    right: 0;
+    left: 0;
+
+    & > * {
+        transform-origin: bottom center;  
+    }
+}
+
+.shape {
+    position: absolute;
+    pointer-events: none;
+    overflow: hidden;
+
+    & > * {
+        display: block;
+        transform: scale(2);
+    }
+}
+
+.shape-fluid-x > * {
+    width: 100%;
+    height: auto;
+}
+
+.shape-flip-y {
+    transform: scaleY(-1);
+}

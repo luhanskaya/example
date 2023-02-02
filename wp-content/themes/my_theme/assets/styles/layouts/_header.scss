@@ -1,0 +1,22 @@
+.header {
+    @include media-breakpoint-up(sm) {
+        padding-top: 1rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding-top: 1.2rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding-top: 2rem;
+    }
+}
+
+.custom-logo {
+    width: 90px;
+    z-index: 110;
+
+    @include media-breakpoint-up(lg) {
+        width: 162px;
+    }
+}

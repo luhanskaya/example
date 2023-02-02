@@ -1,0 +1,32 @@
+/** Set style theme */
+@import "common/variables";
+
+/** Import npm dependencies */
+@import "~bootstrap/scss/bootstrap";
+@import "~animate.css/animate.min";
+@import "~owl.carousel/src/scss/owl.carousel";
+
+/** Import theme styles */
+@import "common/typo";
+@import "common/global";
+@import "common/mixins";
+@import "common/reboot";
+@import "common/sizing";
+@import "common/figure";
+@import "common/animation";
+
+// Components
+@import "components/navbar";
+@import "components/buttons";
+@import "components/cards";
+@import "components/forms";
+@import "components/map";
+
+// Layouts
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/services";
+
+// Sections
+@import "sections/section-steps";
+@import "sections/section-technology";

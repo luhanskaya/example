@@ -1,0 +1,30 @@
+@mixin border-radius($radius: $border-radius, $fallback-border-radius: false) {
+    @if $enable-rounded {
+        border-top-left-radius: valid-radius($radius);
+        border-top-right-radius: 0;
+        border-bottom-right-radius: valid-radius($radius);
+        border-bottom-left-radius: 0;
+    } @else if $fallback-border-radius != false {
+        border-radius: $fallback-border-radius;
+    }
+}
+
+@mixin border-top-radius($radius: $border-radius) {
+    @if $enable-rounded {
+        border-top-left-radius: valid-radius($radius);
+        border-top-right-radius: 0;
+    }
+}
+
+@mixin border-bottom-radius($radius: $border-radius) {
+    @if $enable-rounded {
+        border-bottom-right-radius: valid-radius($radius);
+        border-bottom-left-radius: 0;
+    }
+}
+
+@for $i from -10 through 10 {
+    .z-index-#{$i} {
+        z-index: $i * 10 !important;
+    }
+}

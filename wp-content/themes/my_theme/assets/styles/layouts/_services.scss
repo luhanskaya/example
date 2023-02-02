@@ -1,0 +1,32 @@
+.post-type-archive-service {
+    --navbar-link-color: #fff;
+    --navbar-link-hover-color: #fff;
+    --navbar-toggler-color: #fff;
+
+    .testimonials-carousel {
+        .owl-stage {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.img-service-bottom {
+    @include border-bottom-radius($border-radius-lg);
+
+    @include media-breakpoint-up(lg) {
+        @include border-bottom-radius($border-radius-pill);
+    }
+}
+
+.img-service-top {
+    @include border-top-radius($border-radius-lg);
+
+    @include media-breakpoint-up(lg) {
+        @include border-top-radius($border-radius-pill);
+    }
+}
+
+.img-service {
+    @include border-radius($border-radius-lg);
+}
